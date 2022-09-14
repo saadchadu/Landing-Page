@@ -1,63 +1,120 @@
 @font-face {
     font-family: Aaargh;
-    src: url(/Fonts/Aaargh.ttf);
+    src: url("./Fonts/Aaargh.ttf");
 }
+
 @font-face {
     font-family: Stretch-Pro;
-    src: url(/Fonts/StretchPro.otf);
+    src: url("./Fonts/StretchPro.otf");
 }
+
 @font-face {
     font-family: Avenir;
-    src: url(/Fonts/Avenir-Next.ttc);
+    src: url("./Fonts/Avenir-Next.ttf");
 }
-*{
+
+* {
     margin: 0 !important;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none !important;
 }
-.container-fluid{
+
+.container-fluid {
     height: 100vh;
     width: 100%;
-    
+
 }
-.bg-img{
-    background-image: url(/bg-img.jpg);
+
+.bg-img {
+    background-image: url("./bg-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: -200px;
 }
-.container{
-    padding: 5% 0 2% 10%;
+
+.container {
+    padding: 5% 0 0 10%;
 }
-.we-are{
+
+.we-are {
     padding: 2% 0 2% 10% !important;
 }
-h2{
+
+h2 {
     font-family: Stretch-pro;
     color: white;
-    font-size: 30px !important;
+    font-size: 28px !important;
 }
-.live{
-    padding: 2% 0 2% 10% !important;
+
+.live {
+    padding: 7% 0 0 10% !important;
+    display: flex;
+    align-items: center;
 }
-h3{
+
+.col-live {
+    padding-right: 0 !important;
+}
+
+.col-live2 {
+    padding-left: 0 !important;
+}
+
+h3 {
     font-family: Stretch-pro;
     color: #f607f7;
-    font-size: 42px !important;
+    font-size: 50px !important;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
-.oo{
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 30px #f607f7, 0 0 40px #f607f7;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6;
+    }
+}
+
+.oo {
     letter-spacing: -7px;
 }
-.nn{
+
+.nn {
     margin-left: -5px !important
 }
-.welco{
+
+.welco {
     padding: 0 0 0 10% !important;
 }
-h4{
+
+h4 {
     font-family: Stretch-pro;
     color: #93e400;
-    font-size: 30px !important;
+    font-size: 28px !important;
+}
+
+.second-col {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.explore-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.maga {
+    padding-top: 20%;
+}
+
+.earth {
+    margin-left: -110% !important;
 }
