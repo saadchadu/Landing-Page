@@ -68,15 +68,7 @@ h3 {
     animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 30px #f607f7, 0 0 40px #f607f7;
-    }
 
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6;
-    }
-}
 
 .oo {
     letter-spacing: -7px;
